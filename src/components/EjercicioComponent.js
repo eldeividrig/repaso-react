@@ -29,7 +29,7 @@ export const EjercicioComponent = ({year}) => {
           {yearNow}
         </strong>
         <p>
-          <button onClick={siguiente}>Siguiente</button>
+          <button onClick={siguiente}>Siguiente Probando</button>
           &nbsp;
           <button onClick={anterior}>Anterior</button>
         </p>
