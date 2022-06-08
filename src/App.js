@@ -1,23 +1,28 @@
 import logo from './logo.svg';
 import './App.css';
+import { PrimerComponente } from './components/PrimerComponente';
+import { SegundoComponente } from './components/SegundoComponente';
+import { EjercicioComponent } from './components/EjercicioComponent';
 
 function App() {
+  const fecha = new Date();
+  const yearActual = fecha.getFullYear();
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          Mejorando mi React
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        
+        
+        <PrimerComponente />
+        <hr/>
+        <SegundoComponente />
+        <EjercicioComponent year = {yearActual} />
       </header>
+      
+
     </div>
   );
 }
